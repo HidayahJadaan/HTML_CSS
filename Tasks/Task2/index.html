@@ -1,43 +1,69 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emoji Stars Rating | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<title>Hero Section Hover Effects</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <input type="radio" name="rate" id="star-1">
-    <input type="radio" name="rate" id="star-2">
-    <input type="radio" name="rate" id="star-3">
-    <input type="radio" name="rate" id="star-4">
-    <input type="radio" name="rate" id="star-5">
-    <div class="content">
-      <div class="outer">
-        <div class="emojis">
-          <li class="slideImg"><img src="emojis/emoji-1.png" alt=""></li>
-          <li><img src="emojis/emoji-2.png" alt=""></li>
-          <li><img src="emojis/emoji-3.png" alt=""></li>
-          <li><img src="emojis/emoji-4.png" alt=""></li>
-          <li><img src="emojis/emoji-5.png" alt=""></li>
-        </div>
-      </div>
-      <div class="stars">
-        <label for="star-1" class="star-1 fas fa-star"></label>
-        <label for="star-2" class="star-2 fas fa-star"></label>
-        <label for="star-3" class="star-3 fas fa-star"></label>
-        <label for="star-4" class="star-4 fas fa-star"></label>
-        <label for="star-5" class="star-5 fas fa-star"></label>
-      </div>
-    </div>
-    <div class="footer">
-      <span class="text"></span>
-      <span class="numb"></span>
-    </div>
-  </div>
-
+	<div class="container">
+		<div class="column active">
+			<div class="content">
+				<h1>1</h1>
+				<div class="box">
+					<h2>What is lorem ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="bg bg1"></div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<h1>2</h1>
+				<div class="box">
+					<h2>What is lorem ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="bg bg2"></div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<h1>3</h1>
+				<div class="box">
+					<h2>What is lorem ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="bg bg3"></div>
+		</div>
+		<div class="column">
+			<div class="content">
+				<h1>4</h1>
+				<div class="box">
+					<h2>What is lorem ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat.</p>
+				</div>
+			</div>
+			<div class="bg bg4"></div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).on('mouseover', '.container .column', function(){
+			$(this).addClass('active').siblings().removeClass('active')
+		})
+	</script>
 </body>
 </html>
