@@ -13,7 +13,7 @@ body
 }
 .container .column
 {
-	width: 25%;
+	width: 20%;
 	height: 100%;
 	float: left;
 	border-right: 2px solid rgba(0,0,0,.5);
@@ -85,7 +85,7 @@ body
 }
 .container .column.active .bg.bg1
 {
-	background: url(bg1.jpg);
+	background: url('./imgs/img-3');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -93,7 +93,7 @@ body
 }
 .container .column.active .bg.bg2
 {
-	background: url(bg2.jpg);
+	background: url('./imgs/img-2');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -101,7 +101,7 @@ body
 }
 .container .column.active .bg.bg3
 {
-	background: url(bg3.jpg);
+	background: url('./imgs/img-1');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -109,7 +109,17 @@ body
 }
 .container .column.active .bg.bg4
 {
-	background: url(bg4.jpg);
+	background: url('./imgs/img-4');
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	transition: 0.5s
+}
+
+
+.container .column.active .bg.bg5
+{
+	background: url('./imgs/img-5');
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
